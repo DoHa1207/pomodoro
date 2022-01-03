@@ -1,0 +1,184 @@
+*{
+  font-family: 'Noto Sans TC', sans-serif;
+}
+
+
+html {
+  margin: 0;
+  padding: 0;
+  height:100%;
+  width: 100%;
+  background-color: #fae1dd;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+body {
+  display:inline-block;
+  vertical-align: middle;
+  width: 90%;
+  height: 80%;
+  margin: 3% 5%;
+  background-color: #F45B69;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+
+.timer {
+  display: flex;
+  width: 100%;
+  height: 30%;
+  margin: 5% 7%;
+}
+
+.timer h2 {
+  color: white;
+  font-size: 13vw;
+}
+
+
+
+
+.basicfunction {
+  display: flex;
+  flex-direction: row;
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+
+
+.logo {
+  color: #2f3033;
+  width: 450px;
+  margin-top:5%;
+}
+
+
+.inputtime{
+  display: flex;
+}
+
+
+
+
+.logotext {
+  color:white; 
+  font-size: 4vh;
+  font-weight: 700;
+
+  text-align:center;
+}
+.item,
+.finishedItem {
+  text-align: center;
+  width: 60%;
+  margin: 4% auto;
+  padding: 1% 3% 5% 5%;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  box-shadow: rgba(198, 198, 231, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.item h3,
+.finishedItem h3 {
+  text-align: center;
+  font-size: 20px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  color: #fff;
+}
+.item h3 span,
+.finishedItem h3 span {
+  padding-left: 15px;
+  padding-right: 5px;
+  font-size: 1.1rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.addList {
+  margin: 10px auto 0;
+  width: auto;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+.text {
+  padding: 5px 15px;
+  background: #fff;
+  border: none;
+  cursor: pointer;
+  -webkit-border-radius: 5px;
+  border-radius: 10px;
+  outline-style: none;
+  font-size: 16px;
+  height: 30px;
+  color: #3c3c3c;
+  cursor: pointer;
+}
+.send {
+  margin-left: 10px;
+  height: 30px;
+  border-radius: 10px;
+  border: none;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 3px;
+  background: #fae1dd;
+  color: #F45B69;
+}
+.list,
+#finishlist {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.list li,
+#finishlist li {
+  list-style-type: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: 0.8rem;
+  line-height: 1;
+}
+.list li,
+#finishlist li {
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.list li a,
+#finishlist li a {
+  font-size: 0.78rem;
+  padding-right: 10px;
+}
+
+
+@media screen and (max-width:1024px){ 
+  body {
+    display:inline-block;
+    vertical-align: middle;
+    width: 100%;
+    height: 100%;
+    margin: 0%;
+    background-color: #F45B69;
+  }
+
+  .timer {
+    display: flex;
+    width: 100%;
+    height: 30%;
+    margin: 0 29%;
+  }
+
+}
+
+@media screen and (max-width:812px){ 
+  .text{
+    width: 40%;
+  }
+  .logotext{
+    text-align:center
+  }
+
+}
